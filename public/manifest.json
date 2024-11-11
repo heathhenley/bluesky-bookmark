@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "skeetSaver",
+  "version": "0.1",
+  "description": "Save Bluesky posts to view later",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://bsky.app/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "index.html"
+  }
+}
